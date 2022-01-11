@@ -145,7 +145,7 @@ class AsyncClientManager:
             else:
                 self.cluster_with_density_peaks.add_nodes(new_nodes_dict)
             self.clusters = self.cluster_with_density_peaks.clustering()
-            self.cluster_with_density_peaks.set_t(3)
+            self.cluster_with_density_peaks.set_t(3.2)
             clustering_result = self.cluster_with_density_peaks.show_clusters()
             t_clustering_result = [int(self.current_time.get_time())]
             t_clustering_result.extend(clustering_result)
